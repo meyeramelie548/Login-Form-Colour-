@@ -106,11 +106,11 @@ padding: 0px 45px 0px 20px;
   letter-spacing: 1px;
   cursor: pointer;
   
-  /
-  background: linear-gradient(90deg, #bd0000, #ff4500, #ff8c00, #bd0000);
-  background-size: 300% 100%; /* Vergrößert den Hintergrund, damit er wandern kann */
   
-  /
+  background: linear-gradient(90deg, #bd0000, #ff4500, #ff8c00, #bd0000);
+  background-size: 300% 100%;
+  
+  
   animation: fliessendeLava 4s linear infinite;
   
   /* Intensiver Lava-Glüheffekt */
