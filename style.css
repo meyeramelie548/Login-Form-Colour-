@@ -106,11 +106,11 @@ padding: 0px 45px 0px 20px;
   letter-spacing: 1px;
   cursor: pointer;
   
-  /* Lava-Farbverlauf mit 4 Farbstopps für eine flüssige Endlos-Animation */
+  /
   background: linear-gradient(90deg, #bd0000, #ff4500, #ff8c00, #bd0000);
   background-size: 300% 100%; /* Vergrößert den Hintergrund, damit er wandern kann */
   
-  /* Startet die fließende Lava-Animation (Dauer: 4 Sekunden, unendlich) */
+  /
   animation: fliessendeLava 4s linear infinite;
   
   /* Intensiver Lava-Glüheffekt */
@@ -124,7 +124,7 @@ padding: 0px 45px 0px 20px;
   box-shadow: 0 0 25px rgba(255, 69, 0, 0.9), 0 0 50px rgba(255, 140, 0, 0.7);
 }
 
-/* Die CSS-Animation, die den Hintergrund unendlich von links nach rechts verschiebt */
+
 @keyframes fliessendeLava {
   0% {
     background-position: 0% 50%;
