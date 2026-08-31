@@ -92,27 +92,47 @@ padding: 0px 45px 0px 20px;
 .remember-forgot a:hover{
   border-bottom: 2px solid yellow;
 }
-.wrapper .btn{
+.wrapper .btn {
   width: 100%;
   padding: 15px;
   margin-top: 10px;
-  background-color: white;
   border: none;
   outline: none;
   border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   font-size: 16px;
-  color: purple;
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   cursor: pointer;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
+  
+  /* Lava-Farbverlauf mit 4 Farbstopps für eine flüssige Endlos-Animation */
+  background: linear-gradient(90deg, #bd0000, #ff4500, #ff8c00, #bd0000);
+  background-size: 300% 100%; /* Vergrößert den Hintergrund, damit er wandern kann */
+  
+  /* Startet die fließende Lava-Animation (Dauer: 4 Sekunden, unendlich) */
+  animation: fliessendeLava 4s linear infinite;
+  
+  /* Intensiver Lava-Glüheffekt */
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.6), 0 0 30px rgba(255, 140, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.wrapper .btn:hover{
-  background-color: transparent;
-  color: yellow;
-  border: 2px solid yellow;
+
+.wrapper .btn:hover {
+  transform: scale(1.02); /* Leichtes Vergrößern */
+  /* Das Glühen verstärkt sich beim Hovern */
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.9), 0 0 50px rgba(255, 140, 0, 0.7);
 }
+
+/* Die CSS-Animation, die den Hintergrund unendlich von links nach rechts verschiebt */
+@keyframes fliessendeLava {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+  }
 .wrapper .register-link {
   font-size: 14px;
   text-align: center;
